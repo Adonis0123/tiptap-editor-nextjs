@@ -1,6 +1,6 @@
 import Placeholder from '@tiptap/extension-placeholder';
 import StarterKit from '@tiptap/starter-kit';
-// import DragHandle from './DragHandle';
+import DragHandle from './DragHandle';
 import TiptapLink from '@tiptap/extension-link';
 import Image from '@tiptap/extension-image';
 import Highlight from '@tiptap/extension-highlight';
@@ -16,7 +16,7 @@ import TaskList from "@tiptap/extension-task-list";
 
 
 export const TiptapExtensions = [
-  // DragHandle,
+  DragHandle,
   StarterKit.configure({
     bulletList: {
       HTMLAttributes: {

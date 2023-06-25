@@ -4,6 +4,8 @@ import { EditorContent, useEditor } from "@tiptap/react";
 import { TiptapExtensions } from "./extensions";
 import { TiptapEditorProps } from "./props";
 import { markdown2Html } from "./utils";
+import { EditorBubbleMenu } from "./components/EditorBubbleMenu";
+import ToolsBar from "./components/ToolsBar";
 
 export interface IEditorProps {}
 
@@ -28,16 +30,20 @@ const Editor: React.FC<IEditorProps> = (props) => {
   return (
     <>
       {editor ? (
-        <div
-          style={{
-            boxShadow: "0px 4px 9px rgba(11, 45, 96, 0.16)",
-          }}
-          className="w-full h-full bg-white rounded-lg p-6 overflow-y-auto"
-        >
-          <div>
-            <EditorContent className={` `} editor={editor} />
+        <>
+          <ToolsBar editor={editor} />
+          <div
+            style={{
+              boxShadow: "0px 4px 9px rgba(11, 45, 96, 0.16)",
+            }}
+            className="w-full h-full bg-white rounded-lg p-6 overflow-y-auto"
+          >
+            <div className="relative">
+              <EditorContent className={` `} editor={editor} />
+              <EditorBubbleMenu editor={editor} />
+            </div>
           </div>
-        </div>
+        </>
       ) : null}
     </>
   );
