@@ -1,16 +1,22 @@
-export const presetMarkdown = `# A demo of react-markdown
+export const presetMarkdown = `
+# 基于tiptap的编辑器
 
-react-markdown is a markdown component for React.
+[tiptap文档](https://tiptap.dev/)
 
-👉 Changes are re-rendered as you type.
+## 目前已实现的功能
 
-👈 Try writing some markdown on the left.
+* Tools bar
+* Bubble menu
+* SlashCommand 按 "\" 触发
+* 按 add image
+* 拖拽模块，实现效果不好，暂时没想好如何优化与实现
+* 初始化html格式
 
-## Overview
+## 暂未实现功能
 
-* Follows [CommonMark](https://commonmark.org)
-* Optionally follows [GitHub Flavored Markdown](https://github.github.com/gfm/)
-* Renders actual React elements instead of using dangerouslySetInnerHTML
-* Lets you define your own components (to render MyHeading instead of h1)
-* Has a lot of plugins
+* Tools bar ui 样式
+* 文章样式
+* 协同编辑
+* 输入img url的弹窗
+
 `;

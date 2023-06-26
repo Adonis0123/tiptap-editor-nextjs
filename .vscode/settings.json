@@ -1,0 +1,7 @@
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["classed(?:\\.\\w*)?\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    "cls`([^`]*)",
+    ["classNames\\(([^)]*)\\)"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "chakrounanas.turbo-console-log",
+    "redhat.vscode-yaml",
+    "ahmadalli.vscode-nginx-conf"
+  ]
+}

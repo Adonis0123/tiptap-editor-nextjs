@@ -7,6 +7,7 @@ import { markdown2Html } from "./utils";
 import { EditorBubbleMenu } from "./components/EditorBubbleMenu";
 import ToolsBar from "./components/ToolsBar";
 
+import classNames from 'classnames';
 export interface IEditorProps {}
 
 const Editor: React.FC<IEditorProps> = (props) => {
@@ -36,7 +37,7 @@ const Editor: React.FC<IEditorProps> = (props) => {
             style={{
               boxShadow: "0px 4px 9px rgba(11, 45, 96, 0.16)",
             }}
-            className="w-full h-full bg-white rounded-lg p-6 overflow-y-auto"
+            className={classNames(`w-full h-full bg-white rounded-lg p-6 pl-8 overflow-y-auto tiptap-wrap`)}
           >
             <div className="relative">
               <EditorContent className={` `} editor={editor} />
