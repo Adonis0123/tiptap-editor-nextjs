@@ -7,7 +7,7 @@ export const presetMarkdown = `
 
 * Tools bar
 * Bubble menu
-* SlashCommand 按 "\" 触发
+* SlashCommand 按 \\ 触发
 * 按 add image
 * 拖拽模块，实现效果不好，暂时没想好如何优化与实现
 * 初始化html格式
